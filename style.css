@@ -728,8 +728,8 @@
         inset 0 0 .75em .25em var(--glow-color);
  text-shadow: 0 0 .5em var(--glow-color);
  position: absolute;
- bottom: 190px;
- right: 469px;
+ bottom: 220px;
+ right: auto;
  transition: all 0.3s;
 
 }
