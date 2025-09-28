@@ -762,11 +762,3 @@
         inset 0 0 .5em .25em var(--glow-color);
 }
 
-@media (max-width: 768px) {
- .button {
-   display: none;
-   bottom: 140px;
-   right: 50%;
-   transform: translateX(50%);
- }
-}
