@@ -51,17 +51,6 @@ body {
  transform: translateY(-2px);
 }
 
-/* --- MOBILE RESPONSIVE --- */
-@media (max-width: 768px) {
-  .back-button {
-    top: 8px;
-    left: 8px;
-    width: 32px;
-    height: 32px;
-    font-size: 20px;
-  }
-}
-
 .about-title {
 	font-size: 7.5rem;
 	font-weight: 900;
@@ -281,17 +270,6 @@ top: -5px;
   opacity: 1;
 }
 
-/* Responsif mobile */
-@media (max-width: 768px) {
-  .flip-card-back .company-logos {
-    gap: 12px;
-  }
-
-  .flip-card-back .company-logo-one {
-    width: 60px;
-  }
-}
-
 
 .card.center .flip-card-front img {
 	width: 100%;
@@ -450,50 +428,29 @@ top: -5px;
 }
 
 @media (max-width: 768px) {
-	.about-title {
-		font-size: 4.5rem;
+	.carousel-container {
+		height: 350px;
 	}
-
+	.carousel-track {
+		transform: translateZ(-100px);
+	}
 	.card {
-		width: 200px;
-		height: 280px;
+		width: 220px;
+		height: 300px;
 	}
-
-	.card.left-2 {
-		transform: translateX(-250px) scale(0.8) translateZ(-300px);
-	}
-
-	.card.left-1 {
-		transform: translateX(-120px) scale(0.9) translateZ(-100px);
-	}
-
-	.card.right-1 {
-		transform: translateX(120px) scale(0.9) translateZ(-100px);
-	}
-
+	.card.left-2,
 	.card.right-2 {
-		transform: translateX(250px) scale(0.8) translateZ(-300px);
+		display: none;
 	}
-
 	.member-name {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
-
 	.member-role {
 		font-size: 1.2rem;
 	}
-
-	.member-name::before,
-	.member-name::after {
-		width: 50px;
-	}
-
-	.member-name::before {
-		left: -70px;
-	}
-
-	.member-name::after {
-		right: -70px;
+	.nav-arrow {
+		width: 30px;
+		height: 30px;
+		font-size: 1.2rem;
 	}
 }
-

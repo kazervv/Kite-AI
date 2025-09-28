@@ -50,13 +50,6 @@
   cursor: pointer;
   z-index: 10;
   transition: opacity 0.3s ease;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    top: 40%;
-  }
-
 }
 
 /* Efek hover */
@@ -81,37 +74,29 @@
   top: 0;
   left: 0;
   opacity: 0.8;
-    @media (max-width: 768px) {
-    opacity: 0.5;
-  }
 }
+
 
 .star-layer:nth-child(1) {
   transform: translateZ(-50px);
   animation: star-drift 150s linear infinite;
-   @media (max-width: 768px) {
-    animation: star-drift 100s linear infinite;
-  }
 }
+
+
 
 .star-layer:nth-child(2) {
   transform: translateZ(-100px);
   animation: star-drift 200s linear infinite reverse;
   opacity: 0.6;
-
-  @media (max-width: 768px) {
-    animation: star-drift 120s linear infinite reverse;
-  }
 }
+
 
 .star-layer:nth-child(3) {
   transform: translateZ(-200px);
   animation: star-drift 250s linear infinite;
   opacity: 0.4;
-    @media (max-width: 768px) {
-    animation: star-drift 150s linear infinite;
-  }
 }
+
 
 @keyframes star-drift {
   0% {
@@ -175,15 +160,7 @@
   }
 }
 
-  @media (max-width: 768px) {
-    filter: blur(20px);
-    width: 150%;
-    height: 150%;
-    top: -25%;
-    left: -25%;
-    animation: nebula-shift 20s infinite alternate ease-in-out;
-  }
-
+ 
 /* --- Checkbox Container --- */
 .checkbox-container {
   position: relative;
@@ -194,11 +171,6 @@
   width: 200px;
   height: 200px;
   z-index: 10;
-    @media (max-width: 768px) {
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
-  }
 }
 
 .holo-checkbox-input {
@@ -219,12 +191,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px; 
-    @media (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-  }
 }
+
 
 .holo-box {
   position: relative;
@@ -242,13 +210,6 @@
   overflow: hidden;
   transition: all 0.3s ease;
   transform-style: preserve-3d;
-
-    @media (max-width: 768px) {
-    border: 1px solid rgba(61, 43, 39, 0.5);
-    box-shadow:
-      0 0 5px rgba(138, 116, 105, 0.3),
-      inset 0 0 8px rgba(138, 116, 105, 0.1);
-  }
 }
 
 .holo-inner {
@@ -435,12 +396,8 @@
   text-shadow: 0 0 5px rgba(138, 116, 105, 0.5);
   position: relative;
   transition: all 0.3s ease;
-
-    @media (max-width: 768px) {
-    font-size: 14px;
-    margin-top: 20px;
-  }
 }
+
 
 .holo-checkbox-input:checked ~ .status-text::before {
   color: rgba(244, 239, 231, 0.9);
@@ -641,13 +598,6 @@
   width: 260px;
   margin-top: 30px;
   gap: 3px;
-
-    @media (max-width: 768px) {
-    width: 180px;
-    height: 30px;
-    gap: 2px;
-    margin-top: 20px;
-  }
 }
 
 .frequency-bar {
@@ -658,12 +608,8 @@
   transition:
     height 0.3s ease,
     background 0.3s ease;
-
-     @media (max-width: 768px) {
-    width: 3px;
-    height: 4px;
-  }
 }
+
 
 .holo-checkbox-input:checked ~ .frequency-spectrum .frequency-bar {
   background: rgba(138, 116, 105, 0.6);
@@ -756,11 +702,6 @@
   transition: all 0.4s ease;
   z-index: 10;
 
-    @media (max-width: 768px) {
-    font-size: 8px;
-    left: 25%;
-    top: 10px; /* adjust position */
-  }
 }
 
 #id { top: -60px; }      
@@ -791,18 +732,6 @@
  right: 469px;
  transition: all 0.3s;
 
-   @media (max-width: 768px) {
-    font-size: 10px;
-    padding: 0.4em 0.8em;
-    bottom: 200px;
-    right: 162px;
-    width: auto;
-    max-width: 80%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 
 .button::after {
@@ -831,4 +760,13 @@
  box-shadow: 0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
+}
+
+@media (max-width: 768px) {
+ .button {
+   display: none;
+   bottom: 140px;
+   right: 50%;
+   transform: translateX(50%);
+ }
 }
